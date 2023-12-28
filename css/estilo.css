@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 737px;
+    height: 512px;
+    display: flex;
+    border-radius: 34px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 10px 20px hsl(241, 100%, 89%);
+}
+
+.container .side{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .side:first-child{
+    border-radius: 34px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:  hsl(0, 0%, 100%);
+    padding-top: 38px;
+}
+
+.container .side:first-child h3{
+    color: hsl(241, 100%, 89%);
+    font-size: 20px;
+}
+
+.container .side:first-child p{
+    padding: 0 56px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    margin-top: 17px;
+}
+
+.container .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 34px auto;
+}
+
+.container .circle h1{
+    font-size: 60px;
+}
+
+.container .circle p{
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+
+.container .side:last-child{
+    padding: 0 30px;
+    margin-top: 30px;
+}
+
+.container .side:last-child h3{
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container .side:last-child ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 33px;
+}
+
+.container .side:last-child ul li{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;    /*"espaço entre" os dois filhos de "li", "div" e o "span"*/ 
+    align-items: center;
+    border-radius: 11px;
+    padding: 0 16px;    /*espaçamento de "0" (cima, baixo) e "16px" (laterais)*/
+}
+
+.container .side:last-child ul li:nth-child(1){  /*:nth-child(1) pseudoclasse, a 1ª "li" da "ul"*/
+    background-color: hsla(0, 100%, 67%, 0.074);
+}
+
+.container .side:last-child ul li:nth-child(2){  
+    background-color: hsla(39, 100%, 56%, 0.116);
+}
+
+.container .side:last-child ul li:nth-child(3){  
+    background-color: hsla(166, 100%, 37%, 0.074);
+}
+
+.container .side:last-child ul li:nth-child(4){  
+    background-color: hsla(234, 85%, 45%, 0.097);
+}
+
+.container .side:last-child ul li div{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.container .side:last-child ul li:nth-child(1) div span{
+    color: hsl(0, 100%, 67%);
+}
+
+.container .side:last-child ul li:nth-child(2) div span{
+    color: hsl(39, 100%, 56%);
+}
+
+.container .side:last-child ul li:nth-child(3) div span{
+    color: hsl(166, 100%, 37%);
+}
+
+.container .side:last-child ul li:nth-child(4) div span{
+    color: hsl(234, 85%, 45%);
+}
+
+.container .side:last-child a{
+    width: 100%;
+    line-height: 50px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 29px;
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 38px;
+}
